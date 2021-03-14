@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+button {
+  width: 50px;
+  height: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  margin: 50px auto;
+}
+
+.mainDiv {
+  width: 454px;
+  height: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 5px;
+  box-shadow: 1px 1px 1px darkgray;
+  border: 1px solid darkgray;
+  align-content: center;
+  background-color: #b7f4fc;
+}
+.button1 {
+  margin-bottom: 25px;
+  width: 100px;
+  height: 30px;
+  background: -webkit-linear-gradient(#f6b4d7, #f8daea, #f6b4d7);
+  border: 1px solid #620034;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 20px;
+  outline: none;
+  box-shadow: 1px 1px 1px #606060;
+  color: #620034;
+}
+.button1:hover {
+  background: -webkit-linear-gradient(#f6b4d7, #fa6ab7, #f6b4d7);
+  box-shadow: inset 1px 1px 1px #606060;
+}
+.imageDiv {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin: 4px;
+  box-shadow: 1px 1px 1px darkgray;
+  cursor: pointer;
+}
+
+.LockOff {
+  display: none;
+  visibility: hidden;
+}
+
+.LockOn {
+  display: block;
+  visibility: visible;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  text-align: center;
+  filter: alpha(opacity=10);
+  opacity: 0;
+}
